@@ -10,4 +10,4 @@ app.listen(process.env.PORT || 4000, () => {
 });
 app.use('/', httpsRedirect());
 app.use('/', express.static('./static'));
-app.get('*', (_req,res)=>{res.redirect('/404.html')});
+app.get('*', (_req,res)=>{res.redirect('/index.html')});
